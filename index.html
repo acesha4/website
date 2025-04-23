@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROOMS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400..840;1,400..840&family=Dancing+Script:wght@400..700&family=Petemoss&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400..840;1,400..840&family=Dancing+Script:wght@400..700&family=Petemoss&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" href="logo.png" border-radius="50%" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <img src="logo.png" alt="Quickescape Staycation Logo">
+              <ul>
+                <li><a href="#HOME">Home</a></li>
+                <li><a href="#ABOUT">About</a></li>
+                <li><a href="#FREQUENTLY">Frequently</a></li>
+                <li><a href="#CONTACT">Contact</a></li>
+                <li><a href="#ROOMS">Rooms</a></li>
+              </ul>
+            <div class="nav-links">
+                <div class="user-menu">
+                    <button class="user-icon" id="userIcon">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-user-circle"></i>
+                    </button>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <a href="#" class="bold">Sign up</a>
+                    <a href="#">Log in</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="headline">
+            <h1>UNWIND <span class="recharge">RECHARGE</span> ESCAPE</h1>
+            <h2>ROOM 3508 - 35th floor</h2>
+        </div>
+    </section>
+    
+    <div class="container">
+        <div class="slide"> 
+            <div class="item" style="background-image: url(r-bedd.JPG);">
+                <div class="content">
+                <div class="name">Bedroom Area</div>
+                <div class="des-b">The studio features a cozy bed with soft linens and pillows, providing a restful night's sleep</div>
+            </div>
+        </div>
+            <div class="item" style="background-image: url(r-bedv.JPG);">
+                <div class="content">
+                <div class="name">Bedroom Area</div>
+                <div class="des-k">The studio features a cozy bed with soft linens and pillows, providing a restful night's sleep</div>
+            </div>
+        </div>
+            <div class="item" style="background-image: url(r-kit.JPG);">
+                <div class="content">
+                <div class="name">Kitchen</div>
+                <div class="des">Perfect for light cooking, the kitchenette is equipped with essential appliances such as a microwave, fridge, kettle, and basic cookware for preparing simple meals.</div>
+            </div>
+        </div>
+            <div class="item" style="background-image: url(r-kitchen.JPG);">
+                <div class="content">
+                <div class="name">Bedroom Area</div>
+                <div class="des">Perfect for light cooking, the kitchenette is equipped with essential appliances such as a microwave, fridge, kettle, and basic cookware for preparing simple meals.</div>
+            </div>
+        </div>
+            <div class="item" style="background-image: url(r-bedd.JPG);">
+                <div class="content"> 
+                <div class="name">Bedroom Area</div>
+                <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+            </div>
+        </div>
+    </div>
+        <div class="button">
+            <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <div class="loc" data-aos="fade-down" data-aos-duration="1000">
+        <i class="fas fa-map-marker-alt"></i> Congressional Town Center, 23 Congressional Avenue Brgy Bahay Taro Quezon City
+    </div>
+
+    <div class="features"> 
+        <div class="offer" data-aos="fade-right" data-aos-duration="1000">
+            <h1>Amenities & Features</h1>
+            <h4>Free pool access Sun-Thurs 3pm-10pm</h4>
+            <h4>Free Roof Deck Sun-Thurs 3pm-10pm</h4>
+            <div class="see-more-text">
+                <p id="text" class="expanded">
+                    <i class="fas fa-city"></i> City skyline view <br>
+                    <i class="fas fa-tree"></i> Courtyard view <br>
+                    <i class="fas fa-wifi"></i> Wifi <br>
+                    <span id="moreText" class="hidden"> 
+                        <i class="fas fa-laptop-house"></i> Dedicated workspace <br>
+                        <i class="fas fa-parking"></i> Free street parking <br>
+                        <i class="fas fa-tv"></i> HDTV with Netflix <br>
+                    </span>
+                    <span id="seeMore" class="see-more">See More</span>
+                </p>
+                <button id="readMoreBtn" class="read-more-btn">Read More</button>
+            </div>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="modal-body">
+                    <h2>Full Details</h2>
+                    <h3>Scenic Views</h3>
+                    <p><i class="fas fa-city"></i> City skyline view</p>
+                    <p><i class="fas fa-tree"></i> Courtyard view</p>
+                    <h3>Bathroom</h3>
+                    <p><i class="fas fa-wind"></i> Dryer</p>
+                    <p><i class="fas fa-pump-soap"></i> Shampoo</p>
+                    <p><i class="fas fa-toilet"></i></i> Bidet</p>
+                    <p><i class="fas fa-shower"></i> Outdoor Shower</p>
+                    <p><i class="fas fa-pump-soap"></i> Shower gel</p>
+                    <h3>Laundry</h3>
+                    <p><i class="fas fa-tshirt"></i> Hanger</p>
+                    <p><i class="fas fa-bed"></i> Bed Linens</p>
+                    <p><i class="fas fa-square"></i> Extra pillows and blangkets</p>
+                    <p><i class="fas fa-window-close"></i> Room-darkening shades</p>
+                    <p><i class="fas fa-tshirt"></i> Drying rack for clothing</p>
+                    <h3>Entertainment</h3>
+                    <p><i class="fas fa-plug"></i> Ethernet connection</p>
+                    <p><i class="fas fa-tv"></i> HDTV with Netflix</p>
+                    <p><i class="fas fa-gamepad"></i> Game console: PS4</p>
+                    <p><i class="fas fa-book"></i> Books and reading material</p>
+                    <p><i class="fas fa-bed"></i> Theme room</p>
+                    <h3>Family</h3>
+                    <p><i class="fas fa-dice-d6"></i> Boardgames</p>
+                    <p><i class="fas fa-child"></i> Outdoor playground</p>
+                    <h3>Heating and Cooling</h3>
+                    <p><i class="fas fa-snowflake"></i> Air conditionin</p>
+                    <h3>Home Safety</h3>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+            
+        
+        
+    <div class="offer-2" data-aos="fade-left" data-aos-duration="1000">
+        <h1>Quickescape Published Rate</h1>
+            <h4>Starts from 1,600/night</h4>
+            <h4>Rates are for 2 guest additional guest are  ₱300 per person.</h4>
+            <P><i class="fa-solid fa-calendar-days"></i> SUNDAY-THURSDAY  ₱ 2,000</P>
+            <P><i class="fa-solid fa-calendar-days"></i> FRIDAY- SATURDAY ₱ 2,800</P>
+            <P><i class="fa-solid fa-calendar-days"></i> HOLIDAY/SPECIAL DAY ₱ 3,500</P>
+            <button class="book-now" href="#" id="rate-btn">Book Now</button>
+    </div>
+    </div>
+
+    <div class="vid">
+        <video src="r-vid.mp4" width="1905" autoplay loop muted plays-inline></video> 
+    </div>
+
+    <section class="services" data-aos="fade-down" data-aos-duration="1000">
+        <div class="container-box">
+           <div class="row">
+               <div class="section-title">
+                  <h1>House Rules</h1>
+               </div>
+           </div>
+           <div class="row">
+              <div class="service-items">
+                  <div class="row">
+                     <div class="item-row">
+                        <div class="item-inner-1">
+                           <h3>Need-to-know-details</h3>
+                           <p>Check-in after 3:00PM<br> Checkout before 12:00PM <br>Self Check-in with lockbox</p>
+                           <div class="read-more-cont">
+                              <p class="additional-rules">ADDITIONAL RULES</p>
+                              <p>Respect the space, enjoy your stay.</p>
+                              <p>Welcome to QuickEscape Staycation! We’re excited to host you. To ensure a safe, clean, and enjoyable <br> stay for everyone, please review and follow these house rules:</p>
+                              <p>1. 🧹 Clean-As-You-Go (CLAYGO) Guidelines</p>
+                              <p>Help us maintain a clean and cozy space by following these simple steps:</p>
+                              <p>Trash Disposal <br> Use the garbage bins provided and securely tie trash bags. <br> Dispose of all trash in the basement upon check-out. <br> Php 500 fee applies for non-compliance.</p>
+                              <p>Kitchen Care <br> Wash dishes and utensils after use. <br> Wipe counters clean and avoid leaving leftover food behind.</p>
+                              <p>🛋 Living Area <br> Return furniture and items to their original positions. <br> Bathroom <br> Properly dispose of tissues, wipe any spills, and keep towels neatly placed.</p>
+                              <p>🛏 Bedroom Care <br> Avoid eating in bed. <br> Place used linens and towels in one spot before check-out.</p>
+                              <p>2. 🔑 Locking and Key Handling</p>
+                              <p>Always lock the unit door when leaving. <br> Return the key to the key locker upon check-out. <br> Lost keys will incur a Php 1,500 fee for lock replacement.</p>
+                              <p>3. 🛏 Fresh Linens Provided</p>
+                              <p>We provide clean, fresh linens for your comfort. Please handle them with care: <br> Stained or damaged linens will incur replacement fees: <br> Bedsheet, blanket, or duvet cover: Php 550 <br> Pillow cover: Php 200</p>
+                              <p>4. 🚷 No Unregistered Visitors</p>
+                              <p>For security and privacy, only registered guests are allowed inside the unit. <br> A Php 300 fee per unregistered guest will be charged if reported.</p>
+                              <p>5. 🔇 Respectful Noise Levels</p>
+                              <p>Keep noise levels down starting at 8:00 PM. <br> A strict noise curfew is in effect at 10:00 PM. <br> Penalties may apply for excessive noise.</p>
+                              <p>6. 🍳 Safe Cooking Practices</p>
+                              <p>Use the range hood while cooking to avoid triggering the smoke alarm. <br> Smoke alarm activation will incur a Php 5,000 fee. <br> Avoid cooking strong-smelling foods (e.g., Tuyo or Bagoong) inside the unit. <br> Violations will incur a Php 1,000 cleaning fee.</p>
+                              <p>7. 🏊 Pool Access</p>
+                              <p>Sunday to Thursday: Free access from 3:00 PM to 10:00 PM. <br> Friday: Pool is closed. <br> Saturday: Access fee of Php 200 per person applies.</p>
+                              <p>8. 🛠 Property Care</p>
+                              <p>We work hard to maintain a top-notch space: <br> Any lost, damaged, or stolen furniture or appliances will result in replacement charges.</p>
+                              <p>9. 🚭 No Smoking or Vaping</p>
+                              <p>Smoking and vaping are strictly prohibited inside the unit. <br> Designated smoking areas are available outside.</p>
+                              <p>10. 💡 Energy and Appliance Use</p>
+                              <p>Turn off lights, the TV, and air conditioning when leaving the unit. <br> Fridge Settings: Keep the fridge set to low or medium to maintain stored items properly. <br> Air Conditioning: Do not use the air conditioning while windows are open. A Php 500 penalty applies for moisture-related damage caused by improper AC usage.</p>
+                              <p>11. ⚠ Guest Responsibility</p>
+                              <p>Guests are fully responsible for:Accidents, damages, or injuries that occur during their stay. <br> The hosts, unit owners, and QuickEscape Staycation will not be held responsible for any claims, losses, or expenses resulting from such incidents.</p>
+                              <p>12. ⏰ Check-Out Procedures</p>
+                              <p>Check-out time: 1:00 PM. <br> Before leaving: Dispose of all trash in the basement (Php 500 fee applies for non-compliance). Lock the unit door and return the key to the key locker. <br> Take a photo of the unit to document compliance. Late check-outs are charged Php 300 per hour, with any partial hour counting as a full hour.</p>
+                              <p>We’d love to see any photos from your stay! By sharing, you agree to let us use them for future advertising to showcase the unit.</p>
+                           </div>
+                           <button class="btn" type="button">Read More</button>
+                        </div>
+                     </div>
+                     <div class="item-row">
+                        <div class="item-inner">
+                           <h3>Safety & Property</h3>
+                           <h4>Safety Devices</h4>
+                           <p>Carbon Monoxide <br>Alarm <br>Smoke Alarm <br>Potential for noise</p>
+                        </div>
+                     </div>
+                     <div class="item-row">
+                        <div class="item-inner">
+                           <h3>Cancelation policy</h3>
+                           <p class="cancelation-inner-sub-text">Add your trip days to get the cancellation details for this stay.</p>
+                           </div>
+                           <button class="btnn" href="#" id="rate-btn">Book Now</button>
+                        </div>
+                     </div>
+                  </div>
+              </div>
+           </div>
+        </div>
+     </section>
+
+    </div>
+
+       <div class="popup-box">
+          <div class="popup-content">
+              <div class="popup-header">
+                    <h3></h3>
+                    <span class="popup-close-icon">&times;</span>
+              </div>
+              <div class="popup-body">
+                
+              </div>
+              <div class="popup-footer">
+                    <button class="btn popup-close-btn">Close</button>
+              </div>
+          </div>
+       </div>
+
+       <footer class="footer" id="CONTACT">
+        <div class="footer-container">
+            <div class="footer-title">QUICK ESCAPE STAYCATION</div>
+                <div class="divider"></div>
+                    <div class="footer-content">
+                        <div class="footer-section">
+                            <h3>LINKS</h3>
+                            <ul class="links">
+                                <li><a href="#HOME">HOME</a></li>
+                                <li><a href="#ABOUT">ABOUT</a></li>
+                                <li><a href="#FREQUENTLY">FREQUENTLY</a></li>
+                                <li><a href="#CONTACT">CONTACT</a></li>
+                                <li><a href="#ROOMS">ROOMS</a></li>
+                            </ul>
+                        </div>
+                
+                    <div class="footer-section">
+                            <h3>FOLLOW US</h3>
+                        <div class="social">
+                            <ul>
+                                <li><a href="https://www.facebook.com/quickescapestaycation" class="icon" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                                </a></li> 
+                                <li><a href="https://www.instagram.com/quickescapestaycation#" class="icon" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                                </a></li>
+                                <li><a href="https://www.tiktok.com/" class="icon" target="_blank">
+                                <i class="fab fa-tiktok"></i>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                <div class="footer-section">
+                    <h3>CONTACT US</h3>
+                    <div class="contact-info">
+                        <div class="contact-item"></div>
+                            <div class="contact-text">
+                              <i class="fas fa-map-marker-alt"></i>  Congressional Town Center 23 Congressional Ave, <br> 
+                              Brgy, Quezon City, 1106 Metro Manila
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="con">
+                                <i class="fa-brands fa-viber"></i> Viber: 09544611320 
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                          <div class="contact">
+                            <i class="fa-solid fa-envelope"></i> email: quickescape0311@gmail.com
+                          </div>
+                      </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-links">
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>AOS.init();</script>
+<script src="index.js"></script>
+
+
+    </body>
+</html>
